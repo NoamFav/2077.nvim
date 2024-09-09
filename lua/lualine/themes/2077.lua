@@ -17,7 +17,7 @@ local colors = {
   gray3 = "#3e4452",  -- Inactive gray3
 }
 
-return {
+local theme =  {
   normal = {
     a = { fg = colors.fg2, bg = colors.red1, gui = "bold", },
     b = { fg = colors.fg, bg = colors.gray3 },
@@ -27,22 +27,77 @@ return {
   },
   insert = {
     a = { fg = colors.fg2, bg = colors.blue, gui = "bold" },
+    b = { fg = colors.fg, bg = colors.gray3 },
     c = { fg = colors.fg2, bg = colors.blue },
+    x = { fg = colors.fg, bg = colors.gray1 },
   },
   visual = {
     a = { fg = colors.fg2, bg = colors.yellow, gui = "bold" },
+    b = { fg = colors.fg, bg = colors.gray3 },
     c = { fg = colors.fg2, bg = colors.yellow },
+    x = { fg = colors.fg, bg = colors.gray1 },
   },
   replace = {
     a = { fg = colors.fg2, bg = colors.red1, gui = "bold" },
+    b = { fg = colors.fg, bg = colors.gray3 },
     c = { fg = colors.fg2, bg = colors.red1 },
+    x = { fg = colors.fg, bg = colors.gray1 },
   },
   command = {
     a = { fg = colors.fg2, bg = colors.green, gui = "bold" },
+    b = { fg = colors.fg, bg = colors.gray3 },
     c = { fg = colors.fg2, bg = colors.green },
+    x = { fg = colors.fg, bg = colors.gray1 },
   },
   inactive = {
     a = { fg = colors.fg, bg = colors.gray1 },
+    b = { fg = colors.fg, bg = colors.gray1 },
     c = { fg = colors.fg, bg = colors.gray1 },
+    x = { fg = colors.fg, bg = colors.gray1 },
   },
 }
+
+
+--[[require('lualine').setup {
+  options = {
+    theme = theme,
+    component_separators = '|',
+    section_separators = '',
+    icons_enabled = true,
+    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+  },
+    sections = {--   lualine_a = {'mode'},
+    lualine_b = {'branch'},
+    lualine_c = {'filename', 'diagnostics'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'},
+  },
+  inactive_sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'},
+  },
+  tabline = {
+      lualine_a = {
+          {'buffers', 
+      use_mode_colors = true
+      }
+          },
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {
+        {'tabs',
+        use_mode_colors = true}
+        },
+  },
+  extensions = {}
+}--]]
+
+return theme
