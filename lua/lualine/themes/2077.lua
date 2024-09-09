@@ -61,9 +61,6 @@ local theme =  {
 --[[require('lualine').setup {
   options = {
     theme = theme,
-    component_separators = '|',
-    section_separators = '',
-    icons_enabled = true,
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
   },
@@ -74,24 +71,12 @@ local theme =  {
     lualine_y = {'progress'},
     lualine_z = {'location'},
   },
-  inactive_sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch'},
-    lualine_c = {'filename'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'},
-  },
   tabline = {
       lualine_a = {
           {'buffers', 
       use_mode_colors = true
       }
           },
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
     lualine_z = {
         {'tabs',
         use_mode_colors = true}
