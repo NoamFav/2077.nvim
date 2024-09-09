@@ -19,39 +19,30 @@ local colors = {
 
 return {
   normal = {
-    a = { fg = colors.fg2, bg = colors.red1, gui = "bold", },  -- Normal mode with pink
-    b = { fg = colors.fg, bg = colors.gray3 },               -- Optional darker for other sections
-    c = { fg = colors.fg2, bg = colors.red1 },                  -- Keeping the background
+    a = { fg = colors.fg2, bg = colors.red1, gui = "bold", },
+    b = { fg = colors.fg, bg = colors.gray3 },
+    c = { fg = colors.fg2, bg = colors.red1 },
     x = { fg = colors.fg, bg = colors.gray1 },
 
   },
   insert = {
-    a = { fg = colors.fg2, bg = colors.blue, gui = "bold" },  -- Insert mode with blue
-    b = { fg = colors.fg, bg = colors.gray3 },               -- Keeping a subtle gray for inactive parts
+    a = { fg = colors.fg2, bg = colors.blue, gui = "bold" },
     c = { fg = colors.fg2, bg = colors.blue },
-    x = { fg = colors.fg, bg = colors.gray1 },
   },
   visual = {
-    a = { fg = colors.fg2, bg = colors.yellow, gui = "bold" },-- Visual mode with yellow
-    b = { fg = colors.fg, bg = colors.gray3 },
+    a = { fg = colors.fg2, bg = colors.yellow, gui = "bold" },
     c = { fg = colors.fg2, bg = colors.yellow },
-    x = { fg = colors.fg, bg = colors.gray1 },
   },
   replace = {
-    a = { fg = colors.fg2, bg = colors.red1, gui = "bold" },  -- Replace mode with same color as normal
-    b = { fg = colors.fg, bg = colors.gray3 },
+    a = { fg = colors.fg2, bg = colors.red1, gui = "bold" },
     c = { fg = colors.fg2, bg = colors.red1 },
-    x = { fg = colors.fg, bg = colors.gray1 },
   },
   command = {
-    a = { fg = colors.fg2, bg = colors.green, gui = "bold" },-- Command mode with orange (optional)
-    b = { fg = colors.fg, bg = colors.gray3 },
+    a = { fg = colors.fg2, bg = colors.green, gui = "bold" },
     c = { fg = colors.fg2, bg = colors.green },
-    x = { fg = colors.fg, bg = colors.gray1 },
   },
   inactive = {
-    a = { fg = colors.fg, bg = colors.gray1 },               -- Inactive with gray
-    b = { fg = colors.fg, bg = colors.gray3 },
+    a = { fg = colors.fg, bg = colors.gray1 },
     c = { fg = colors.fg, bg = colors.gray1 },
   },
 }
