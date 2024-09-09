@@ -57,7 +57,11 @@ local theme =  {
   },
 }
 
-
+-- Added some default configuration for lualine
+-- use this as a reference to configure your own lualine
+-- I made this configuration so that the tabs are colored according to the mode
+-- and the buffers are colored according to the mode
+-- Uncomment the following lines to use this configuration
 --[[require('lualine').setup {
   options = {
     theme = theme,
